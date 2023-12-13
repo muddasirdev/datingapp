@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashFirstFragment"
+    android:id="@+id/root">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/homepic" />
+
+    <RelativeLayout
+        android:id="@+id/discoverLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/half_circle">
+
+        <TextView
+            android:id="@+id/discover"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discover_meaningful_connections"
+            android:fontFamily="@font/clashdisplay_bold"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/join_dating"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/clashdisplay_regular"
+            android:text="@string/join_dating_today_and_explore_a_world_of_meaningful_connections_swipe_match_and_meet_like_minded_peole"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"  />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/join_dating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/splash_first" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/discoverLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-70dp"
+        android:background="@drawable/polygon_arrow" />
+
+</RelativeLayout>

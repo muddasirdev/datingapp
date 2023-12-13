@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUpFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/singIn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_to_your_account"
+            android:fontFamily="@font/clashdisplay_bold"
+            android:textSize="35sp"/>
+
+        <ImageView
+            android:layout_marginEnd="30dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/speechbubble" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:fontFamily="@font/clashdisplay_regular"
+        android:id="@+id/loginMethods"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singIn"
+        android:text="Sign Up with the following methods"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/loginAs"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginMethods"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/google" />
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/facebook" />
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apple" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/or"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginAs"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:background="#CFCFCF"
+            android:layout_width="100dp"
+            android:layout_height="2dp"/>
+
+
+        <TextView
+            android:fontFamily="@font/clashdisplay_semibold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/singIn"
+            android:text="@string/or"
+            android:textSize="18sp"/>
+
+
+        <View
+            android:layout_marginStart="5dp"
+            android:background="#CFCFCF"
+            android:layout_width="100dp"
+            android:layout_height="2dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/black"
+            app:startIconDrawable="@drawable/sms"
+            style="@style/MyTextInputLayout"
+            android:hint="@string/enter_email"
+            app:expandedHintEnabled="false"
+            android:textColorHint="@color/black"
+            android:background="@drawable/textbox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="@font/clashdisplay_medium"
+                android:inputType="textEmailAddress"
+                android:text="Jamesthomas@mail.com"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/black"
+            app:startIconDrawable="@drawable/lock"
+            style="@style/MyTextInputLayout"
+            android:hint="@string/enter_password"
+            android:textColorHint="@color/black"
+            android:background="@drawable/textbox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="@font/clashdisplay_medium"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i_agree_to_dating_privacy_policy"
+                android:fontFamily="@font/clashdisplay_medium"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signIn"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:text="@string/sing_up"
+            android:fontFamily="@font/clashdisplay_bold"
+            android:backgroundTint="@color/basic"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingStart="40dp"
+        android:id="@+id/discoverLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/half_circle">
+
+
+        <TextView
+            android:id="@+id/donthave"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="16sp"
+            android:fontFamily="@font/clashdisplay_medium"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/donthave"
+            android:text="Sing In"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/clashdisplay_bold"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/polygon_arrow" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

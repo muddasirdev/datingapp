@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFullNameFragment"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="40"
+            app:trackThickness="10dp"
+            app:trackCornerRadius="20dp"
+            app:indicatorColor="@color/basic"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/whatyouname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:text="@string/be_true_to_yourself"
+        android:fontFamily="@font/clashdisplay_bold"
+        android:textSize="37sp"
+        android:textColor="@color/basic"/>
+
+    <TextView
+        android:id="@+id/craft"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whatyouname"
+        android:text="@string/select_the_gender_that_most_authentically_represents_you_as_authenticity_is_essential_for_building_meaningful_connections"
+        android:fontFamily="@font/clashdisplay_medium"
+        android:textSize="16sp"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/man"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/craft"
+        android:backgroundTint="@color/basic"
+        android:fontFamily="@font/clashdisplay_bold"
+        android:text="@string/man"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/woman"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/man"
+        android:backgroundTint="#FFE0E7"
+        android:fontFamily="@font/clashdisplay_medium"
+        android:textColor="@color/black"
+        android:text="@string/woman"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/other"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/woman"
+        android:backgroundTint="#FFE0E7"
+        android:fontFamily="@font/clashdisplay_medium"
+        android:textColor="@color/black"
+        android:text="@string/other"
+        android:textSize="18sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/signIn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:text="@string/next"
+        android:fontFamily="@font/clashdisplay_bold"
+        android:backgroundTint="@color/basic"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFullNameFragment"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="100"
+            app:trackThickness="10dp"
+            app:trackCornerRadius="20dp"
+            app:indicatorColor="@color/basic"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/enable_location" />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/whatyouname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:text="Enable Location"
+            android:fontFamily="@font/clashdisplay_bold"
+            android:textSize="40sp"
+            android:textColor="@color/basic"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/craft"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/whatyouname"
+            android:text="o use the Datinghub app, please enable your location."
+            android:fontFamily="@font/clashdisplay_medium"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/signIn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:text="@string/allow_location"
+        android:fontFamily="@font/clashdisplay_bold"
+        android:backgroundTint="@color/basic"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Dating App</string>
+    <string name="discover_meaningful_connections">Discover meaningful Connections</string>
+    <string name="join_dating_today_and_explore_a_world_of_meaningful_connections_swipe_match_and_meet_like_minded_peole">Join Dating today and explore a world of meaningful connections. Swipe, Match and meet like-minded peole.</string>
+
+    <string name="be_yourself_stand_outfrom_the_crowd">Be Yourself, Stand Outfrom the Crowd</string>
+    <string name="tell_your_story_share_your_interests_hobbies_and_what_you_re_looking_for_be_authentic_and_make_a_lasting_impression">Tell your story. Share your interests, hobbies and what you’re looking for. Be authentic and make a lasting impression.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover_real_connections_with_dating_intelligent_matchmaking_start_swiping_to_find_your_perfect_match_today">Discover real connections with Dating intelligent matchmaking. Start swiping to find your perfect match today.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="sign_in_to_your_account">Sign In to your Account</string>
+    <string name="login_with_the_following_methods">Login with the following methods</string>
+    <string name="or">OR</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="register_now">Register Now</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="sign_up_to_your_account">Sign Up to your Account</string>
+    <string name="i_agree_to_dating_privacy_policy">I agree to Dating Privacy Policy</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="what_your_full_name">What your full name?</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="next">Next</string>
+    <string name="craft_a_distinctive_nickname_that_truly_reflects_your_identity_it_s_the_key_to_how_others_will_recognize_and_etch_you_in_their_memories">Craft a distinctive nickname that truly reflects your identity; it\'s the key to how others will recognize and etch you in their memories!</string>
+    <string name="let_s_celebrate_you_birthday">Let’s Celebrate you Birthday</string>
+    <string name="please_share_your_birthdate_your_profile_currently_only_indicates_your_age_omitting_your_birthday">Please share your birthdate; your profile currently only indicates your age, omitting your birthday.</string>
+    <string name="be_true_to_yourself">Be true to yourself</string>
+    <string name="select_the_gender_that_most_authentically_represents_you_as_authenticity_is_essential_for_building_meaningful_connections">Select the gender that most authentically represents you, as authenticity is essential for building meaningful connections.</string>
+    <string name="woman">Woman</string>
+    <string name="man">Man</string>
+    <string name="other">Other</string>
+    <string name="allow_location">Allow Location</string>
+    <string name="finish">Finish</string>
+</resources>
