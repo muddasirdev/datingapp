@@ -38,7 +38,7 @@
         android:layout_below="@+id/progress"
         android:text="@string/be_true_to_yourself"
         android:fontFamily="@font/clashdisplay_bold"
-        android:textSize="37sp"
+        android:textSize="35sp"
         android:textColor="@color/basic"/>
 
     <TextView

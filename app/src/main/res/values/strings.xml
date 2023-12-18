@@ -33,4 +33,19 @@
     <string name="other">Other</string>
     <string name="allow_location">Allow Location</string>
     <string name="finish">Finish</string>
+    <string name="we_have_sent_an_otp_code_to_your_email_and_jamesthomas_mail_com_enter_the_otp_code_below_to_verify">We have sent an OTP code to your email and jamesthomas@mail.com, Enter the OTP code below to verify!</string>
+    <string name="verify">Verify</string>
+    <string name="you_can_resend_code_in">You can resend code in</string>
+    <string name="otp">OTP</string>
+    <string name="verifications">Verifications</string>
+    <string name="your_relationship_goals">Your relationship goals</string>
+    <string name="select_the_type_of_relationship_you_re_seeking_on_datinghub_whether_it_s_love_friendship_or_something_in_between_the_choice_is_entirely_yours">Select the type of relationship you\'re seeking on DatingHub: whether it\'s love, friendship, or something in between – the choice is entirely yours.</string>
+    <string name="seeking_love_and_meaningful_connections_nchoose_dating_for_genuine_relationships">Seeking love and meaningful connections? \nChoose dating for genuine relationships.</string>
+    <string name="serious_relationship">Serious Relationship</string>
+    <string name="dating">Dating</string>
+    <string name="casual">Casual</string>
+    <string name="friendship">Friendship</string>
+    <string name="select_your_interest">Select Your Interest</string>
+    <string name="share_your_interests_passions_and_hobbies_and_we_ll_match_you_with_like_minded_individuals_who_share_your_enthusiasm">Share your interests, passions, and hobbies, and we\'ll match you with like-minded individuals who share your enthusiasm.</string>
+    <string name="finding_people_near_you">Finding people near you....</string>
 </resources>
