@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FindNearYouFragment"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow_left"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pic"
+            app:civ_border_color="#FBD8E2"/>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Howard"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Now"
+                android:textColor="#52CC72"
+                android:textSize="18sp"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+        </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_more"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/message_time_back"
+            android:textSize="16sp"
+            android:fontFamily="@font/clashdisplay_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/basic"
+            android:text="Yesterday"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/out_going_message"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="right"
+                android:textSize="16sp"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hi, good morning, Easther. By the\nway, nice profile picture!"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:textSize="15sp"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:textColor="#F5BFCA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09:41"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/out_going_message"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="right"
+                android:textSize="16sp"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It seems we have a lot in common\nand a strong mutual interest."/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:textSize="15sp"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:textColor="#F5BFCA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09:41"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/incoming_message"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="left"
+                android:textSize="16sp"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, Good morning too\nJames. How are you dear?"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:textSize="15sp"
+                android:fontFamily="@font/clashdisplay_medium"
+                android:textColor="@color/basic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09:41"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#FFE0E7"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="@color/black"
+                app:startIconDrawable="@drawable/ic_add_square"
+                style="@style/MyTextInputLayout"
+                android:hint="Send Message"
+                android:background="@drawable/textbox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/clashdisplay_medium"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

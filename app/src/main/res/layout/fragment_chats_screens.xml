@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FindNearYouFragment"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pic"
+            app:civ_border_color="#FBD8E2"/>
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/speechbubble"/>
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datinghub"
+                android:textSize="22sp"
+                android:textColor="@color/basic"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_search_favorite"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_more"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textSize="35sp"
+        android:textColor="@color/basic"
+        android:fontFamily="@font/clashdisplay_bold"
+        />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pic"
+                app:civ_border_color="#FBD8E2"/>
+
+            <ImageView
+                android:layout_gravity="bottom|right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/active" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Howard"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is truly impressive!"
+                android:textSize="18sp"
+                android:fontFamily="@font/clashdisplay_regular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/basic"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:41"
+            android:textSize="16"
+            android:fontFamily="@font/clashdisplay_medium"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFE0E7"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pic"
+            app:civ_border_color="#FBD8E2"/>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Howard"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is truly impressive!"
+                android:textSize="18sp"
+                android:fontFamily="@font/clashdisplay_regular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/basic"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:41"
+            android:textSize="16"
+            android:fontFamily="@font/clashdisplay_medium"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFE0E7"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pic"
+                app:civ_border_color="#FBD8E2"/>
+
+            <ImageView
+                android:layout_gravity="bottom|right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/active" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Howard"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is truly impressive!"
+                android:textSize="18sp"
+                android:fontFamily="@font/clashdisplay_regular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/basic"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:41"
+            android:textSize="16"
+            android:fontFamily="@font/clashdisplay_medium"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFE0E7"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pic"
+            app:civ_border_color="#FBD8E2"/>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Howard"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is truly impressive!"
+                android:textSize="18sp"
+                android:fontFamily="@font/clashdisplay_regular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/basic"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:41"
+            android:textSize="16"
+            android:fontFamily="@font/clashdisplay_medium"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFE0E7"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pic"
+                app:civ_border_color="#FBD8E2"/>
+
+            <ImageView
+                android:layout_gravity="bottom|right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/active" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Howard"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is truly impressive!"
+                android:textSize="18sp"
+                android:fontFamily="@font/clashdisplay_regular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/basic"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:41"
+            android:textSize="16"
+            android:fontFamily="@font/clashdisplay_medium"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFE0E7"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pic"
+            app:civ_border_color="#FBD8E2"/>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Howard"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/clashdisplay_semibold"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is truly impressive!"
+                android:textSize="18sp"
+                android:fontFamily="@font/clashdisplay_regular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/basic"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:41"
+            android:textSize="16"
+            android:fontFamily="@font/clashdisplay_medium"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFE0E7"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home_grey"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/basic"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_magic_star"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/basic"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matches"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_messages_grey"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/basic"
+                android:fontFamily="@font/clashdisplay_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chats"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

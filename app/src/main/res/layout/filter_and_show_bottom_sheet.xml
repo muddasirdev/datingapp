@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet"
+    android:paddingTop="30dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/basic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter"
+            android:fontFamily="@font/clashdisplay_bold"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/and_show"
+            android:fontFamily="@font/clashdisplay_medium"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_close"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance_range"
+            android:fontFamily="@font/clashdisplay_semibold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_200_km"
+            android:fontFamily="@font/clashdisplay_semibold"
+            android:textColor="@color/basic"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:value="0.5"
+        app:thumbColor="@color/basic"
+        app:tickVisible="true"
+        app:trackColorActive="@color/basic" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age_range"
+            android:fontFamily="@font/clashdisplay_semibold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_20_25"
+            android:fontFamily="@font/clashdisplay_semibold"
+            android:textColor="@color/basic"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.2"
+        android:value="0.5"
+        android:valueTo="1"
+        app:thumbColor="@color/basic"
+        app:tickVisible="true"
+        app:trackColorActive="@color/basic" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_me"
+        android:fontFamily="@font/clashdisplay_semibold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/man"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/craft"
+            android:backgroundTint="@color/basic"
+            android:fontFamily="@font/clashdisplay_bold"
+            android:text="@string/man"
+            android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/man"
+            android:backgroundTint="#FFE0E7"
+            android:fontFamily="@font/clashdisplay_medium"
+            android:textColor="@color/black"
+            android:text="@string/woman"
+            android:textSize="18sp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/woman"
+            android:backgroundTint="#FFE0E7"
+            android:fontFamily="@font/clashdisplay_medium"
+            android:textColor="@color/black"
+            android:text="@string/other"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:fontFamily="@font/clashdisplay_semibold"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyTextInputLayout"
+        android:background="@drawable/textbox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:fontFamily="@font/clashdisplay_medium"
+            android:inputType="textEmailAddress"
+            android:text="@string/jodhpur"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/signIn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:text="@string/apply"
+        android:fontFamily="@font/clashdisplay_bold"
+        android:backgroundTint="@color/basic"/>
+
+</LinearLayout>
