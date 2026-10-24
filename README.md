@@ -1,25 +1,57 @@
-# Dating App UI
+# Dating App UI Prototype
 
-A Kotlin Android UI prototype for a dating app concept. The repository focuses on the onboarding and discovery interface.
+A Kotlin Android application prototype focused on onboarding and discovery screen layouts. The repository is useful as a UI starting point; it does not implement a complete dating service.
 
-## Included screens
+## Screens and code present
 
-- Login and sign-up
-- Profile setup
-- Location setup
-- Nearby discovery
+The project includes layouts and fragments for splash/onboarding, login, sign-up, profile setup, location setup, nearby discovery, and chat presentation. Navigation is built with AndroidX Navigation and the UI uses Android Views with XML layouts and View Binding.
 
-## Tech
+Some fragments currently only inflate their layout. In particular, the nearby discovery and sign-up screens do not implement real account creation or matching behavior. The project has no server, persistent user database, production authentication, messaging transport, or implemented matching service.
 
-Kotlin, Android Views, XML layouts, View Binding, AndroidX Navigation, and Google Maps dependencies.
+## Technology
 
-## Run locally
+- Kotlin
+- Android Views and XML layouts
+- View Binding
+- AndroidX Navigation
+- Google Maps dependency in the Android build
 
-1. Clone the repository and open it in Android Studio.
-2. Sync Gradle and run the `app` configuration on an Android device or emulator (minimum SDK 21).
+## Project layout
 
-This repository contains the Android client UI. It does not include a server implementation or production authentication and matching services.
+- `app/src/main/java` — activity, fragments, and app navigation
+- `app/src/main/res/layout` — screen layouts
+- `app/src/main/res/navigation` — navigation graph
+- `app/src/main/res/drawable` — UI artwork and icons
+- `app/build.gradle` — SDK configuration and dependencies
+
+## Requirements
+
+- Android Studio and a compatible JDK
+- Android SDK
+- Android device or emulator running Android 5.0 / API 21 or later
+
+## Run
+
+Open the project in Android Studio, sync Gradle, then run the `app` configuration on a device or emulator.
+
+From a shell:
+
+```sh
+./gradlew assembleDebug
+```
+
+On Windows:
+
+```bat
+gradlew.bat assembleDebug
+```
+
+No successful build is claimed here. Google Maps features require appropriate Maps configuration if those screens are developed to use the Maps SDK.
+
+## Status and next development work
+
+This is a client-side UI prototype. Real client functionality would require implementing and securing authentication, profile storage, location permission and consent flows, discovery/matching rules, chat delivery, moderation, and a backend API. Do not present the current repository as a deployed or production-ready dating platform.
 
 ## License
 
-No license file is currently included. Contact the repository owner before reusing or distributing this code.
+No license file is included. Contact the repository owner before reusing or distributing the code.
